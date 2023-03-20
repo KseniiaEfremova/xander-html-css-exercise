@@ -69,8 +69,42 @@ body {
   }
   
   /* contact section */
+
+
+  #contacts {
+    background-color: var(--plum);
+    text-align: center;
+  }
+
+  #contacts article h2 {
+    font-size: 1.5rem;
+  }
+
+  #contacts article {
+    margin: 0 auto;
+    height: 300px;
+    width: 400px;
+    margin-top: 10px;
+    padding: 5rem 0;
+  }
+
+  #contacts article a {
+    color: var(--aqua);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   
-  #contact {
+  /* #contact {
     text-align: center;
     background-color: var(--plum);
   }
@@ -88,4 +122,4 @@ body {
   #contact article a {
     color: var(--aqua);
   }
-  
+   */
