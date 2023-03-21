@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Style a HTML Page</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <title>Create the Markdown</title>
   </head>
   <body>
     <nav>
         <ul class="navlinks">
             <li>
-                <a href="#">Kseniia Efremova</a>
+                <a href="#">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    Kseniia Efremova
+                </a>
             </li>
             <li>
                 <a href="#">Projects</a>
@@ -23,13 +32,19 @@
                 <a href="#">Contact</a>
             </li>
             <li>
-                <a href="#">LinkedIn</a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
             </li>
             <li>
-                <a href="#">Github</a>
+                <a href="#">
+                    <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+                    <span class="sr-only">Github</span>
+                </a>
             </li>
             <li>
-                <a href="#">Resume</a>
+                <a class="call-to-action" href="#">Resume</a>
             </li>
         </ul>
     </nav>
@@ -46,7 +61,31 @@
             <p>I'm always interested in learning about new technologies to build cool projects.</p>
             <a href="mailto:email-address@hi.com">Email Me</a>
         </article>
-        
     </section>
+
+    <footer>
+        <p>Kseniia Efremova · Developer</p>
+        <ul class="footer-links">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="sr-only">Mail</span>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p> © Kseniia Efremova. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
