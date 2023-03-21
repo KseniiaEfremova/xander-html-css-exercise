@@ -162,40 +162,40 @@ body {
   }
 
 
-    /*  footer  */
+/* Footer */
 
-  footer {
-    text-align: center;
-  }
-
-  footer p {
-    font-size: 20px;
-  }
-
-  footer ul {
-    text-decoration: none;
-  }
-
-
-  .footer-links {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .footer-links li a {
-    text-decoration: none;
-    transition: color 0.5s ease;
-    color: var(--magenta);
-    font-size: 180%;
+footer {
+    padding: 0.5rem 0;
   }
   
-  .footer-links li a:hover {
+  footer p,
+  footer p small {
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.675rem;
+  }
+  
+  footer p small {
+    font-size: 1rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 2rem;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+  }
+  
+  footer nav ul li a [class*="fa"] {
+    color: var(--magenta);
+    transition: all 0.4s ease;
+  }
+  
+  footer nav ul li a [class*="fa"]:hover {
     color: var(--aqua);
   }
-
 
