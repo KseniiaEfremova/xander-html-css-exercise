@@ -55,6 +55,7 @@ body {
     background-color: var(--dkblue);
   }
 
+
   /* Navbar */
 
   nav {
@@ -260,6 +261,91 @@ body {
     }
   }
 
+/* about section */
+
+.section-plum {
+  padding: 4rem 1rem;
+  background-color: #4b0d49;
+
+}
+
+.section-plum h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+.section-plum h3 {
+  color: var(--aqua);
+  margin-bottom: calc(1.5rem * 1.5);
+}
+
+.section-plum h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 2rem 0;
+}
+
+.white-box {
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 1rem;
+  color: var(--black);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.section-plum ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.section-plum img {
+  margin: 2rem 0 4rem 0;
+  padding: 0.2rem;
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 14px;
+  width: 100%;
+}
+
+/* Create the media query */
+@media screen and (min-width: 550px) {
+  /* Turn our article into a CSS grid */
+
+  .section-plum article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  .text.reversed {
+    order: 2;
+    text-align: left;
+  }
+
+  .section-plum ul {
+      justify-content: flex-start;
+  }
+
+  .image.reversed{
+      grid-column: 5 / 11;
+    }
+
+  .text.reversed {
+  grid-column: 1 / 7;
+  }
+
+  .image,
+  .text {
+      grid-row: 1 / 2;
+  }
+
+}
 
 /* Footer */
 
@@ -298,3 +384,23 @@ footer {
     color: var(--aqua);
   }
 
+@media screen and (min-width: 768px) {
+  .text.reversed {
+    grid-column: 1 / 5;
+  }
+
+  .image.reversed {
+    grid-column: 5 / 11;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .image.reversed{
+    grid-column: 5 / 11;
+  }
+
+.text.reversed {
+grid-column: 1 / 7;
+}
+
+}
